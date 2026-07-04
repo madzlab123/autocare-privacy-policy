@@ -320,6 +320,41 @@
       flex-shrink: 0;
     }
 
+    /* ── Permission list ── */
+    .permission-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .permission-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 14px 16px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+
+    .permission-badge {
+      flex-shrink: 0;
+      background: var(--accent-dim);
+      border: 1px solid rgba(79,142,247,0.3);
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-top: 1px;
+    }
+
     /* ── Contact card ── */
     .contact-card {
       background: var(--surface);
@@ -404,7 +439,7 @@
 
   <div class="page-title">
     <h2>Privacy Policy</h2>
-    <span class="effective">Effective 27 February 2026</span>
+    <span class="effective">Effective 4 July 2026</span>
   </div>
 
   <div class="intro-card">
@@ -428,6 +463,24 @@
     </ul>
     <p style="margin-top:16px">The Application does <strong style="color:var(--text-primary)">not</strong> gather precise location data from your device, and does <strong style="color:var(--text-primary)">not</strong> use Artificial Intelligence (AI) to process your data or provide features.</p>
     <p style="margin-top:12px">The Service Provider may use the information you provide to contact you with important notices, required information, or marketing promotions. Any personally identifiable information you provide will be retained and used as described in this policy.</p>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- Data Stored on Device (NEW) -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/></svg>
+      </div>
+      <h3>Information Stored on Your Device</h3>
+    </div>
+    <p>AutoCare allows you to add and manage information about your vehicles, including make, model, year, license plate, mileage, and maintenance service records.</p>
+    <ul class="data-list">
+      <li>This information is stored locally on your device using on-device storage and is not transmitted to or stored on any external server operated by the Service Provider</li>
+      <li>The Service Provider does not have access to this data and cannot view, recover, or restore it</li>
+      <li>If you uninstall the Application or clear its storage, this data will be permanently lost unless you have backed it up yourself</li>
+    </ul>
   </div>
 
   <hr class="divider" />
@@ -479,6 +532,7 @@
       <div class="ads-cell"><strong>Used for</strong>Displaying relevant ads &amp; measuring performance</div>
       <div class="ads-cell"><strong>Used for</strong>Fraud prevention &amp; improving ad services</div>
     </div>
+    <p style="margin-top:16px">AutoCare itself does not request or access your device's precise location. The AdMob SDK may infer an approximate location from your IP address for the purpose of showing relevant ads. This is handled entirely by Google's AdMob service and is separate from any functionality within AutoCare.</p>
 
     <p style="margin-top:20px">You can opt out of personalized advertising:</p>
     <div class="steps">
@@ -486,6 +540,24 @@
       <div class="step"><div class="step-num">2</div>Or visit: <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener" style="color:var(--accent);margin-left:4px">google.com/settings/ads</a></div>
       <div class="step"><div class="step-num">3</div>Learn more at: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color:var(--accent);margin-left:4px">policies.google.com/privacy</a></div>
     </div>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- Permissions (NEW) -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+      </div>
+      <h3>Permissions</h3>
+    </div>
+    <ul class="permission-list">
+      <li>
+        <span class="permission-badge">Notifications</span>
+        <span>AutoCare requests permission to send notifications so it can remind you about upcoming or overdue vehicle maintenance. You can disable this at any time through your device's system settings without affecting the app's other functionality.</span>
+      </li>
+    </ul>
   </div>
 
   <hr class="divider" />
